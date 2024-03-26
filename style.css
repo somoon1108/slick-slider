@@ -1,0 +1,150 @@
+@import "D:\adobeUXP/reset.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eee;
+}
+
+body {
+    font-family: 'Noto Sans KR', Georgia, Arial, Helvetica, Sans-serif, serif;
+    font-size: 100px;
+    background-color: orange;
+}
+
+.container {
+    position: relative;
+}
+
+.slick--visual__paging {
+    position: absolute;
+    top: 1rem;
+    right: 1%;
+    letter-spacing: 2px;
+    font-size: 26%;
+    z-index: 2;
+}
+
+.slick--visual__paging .slick-dots li {
+    display: none;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.slick--visual__paging .slick-dots li.slick-active {
+    display: flex;
+}
+
+.menu {
+    position: absolute;
+    display: inline;
+    font-size: 20%;
+    margin-top: 1rem;
+    margin-left: 1%;
+    z-index: 2;
+    list-style: none;
+}
+
+.menu li {
+    display: inline;
+}
+
+button {
+    width: 25px;
+    height: 25px;
+    background-color: #004fff;
+    border: none;
+    color: red;
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: 0.3s;
+}
+
+button > div > img {
+    width: 25px;
+    height: 25px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background-color: rgba(0, 79, 255, 0.3);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 79, 255, 0.6);
+}
+
+.slick--visual {
+    height: 100vh;
+}
+
+.slick--visual .slick-list,
+.slick--visual .slick-track {
+    height: 100%;
+}
+
+.slick-slide {
+    position: relative;
+    height: 100%;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slick--visual__etc {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    width: 84%;
+    flex-direction: column;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.visual__arrows {
+    position: relative;
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.visual-prev,
+.visual-next {
+    border: 0;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.visual-prev {
+    left: 0;
+}
+
+.visual-next {
+    right: 0;
+}
+
+.visual__progress {
+    height: 4px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #555, #555);
+    z-index: 2;
+}
